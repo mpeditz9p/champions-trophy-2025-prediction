@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICC Champions Trophy 2025 Predictions</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #141e30, #243b55);
+            font-family: 'Arial', sans-serif;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #1f4068;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #e43f5a;
+        }
+        main {
+            padding: 20px;
+        }
+        .match-card {
+            background-color: #162447;
+            margin: 20px 0;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+        .match-card:hover {
+            transform: scale(1.05);
+        }
+        .match-card h2 {
+            margin: 0 0 10px;
+            font-size: 1.8em;
+            color: #e43f5a;
+        }
+        .match-card p {
+            margin: 5px 0;
+            font-size: 1.2em;
+        }
+        .prediction {
+            margin-top: 10px;
+            font-size: 1.1em;
+            color: #f0a500;
+        }
+        .match-winner {
+            margin-top: 10px;
+            font-size: 1.1em;
+            color: #4CAF50;
+        }
+        .countdown {
+            font-size: 1.2em;
+            color: #ffcc00;
+            margin-top: 5px;
+        }
+        .about {
+            background-color: #1b1b2f;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .about h2 {
+            color: #e43f5a;
+        }
+        footer {
+            background-color: #1b1b2f;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+        }
+        footer p {
+            margin: 0;
+            font-size: 1em;
+            color: #e43f5a;
+        }
+    </style>
+    <script>
+        function countdownTimer(id, matchDate) {
+            let countDownDate = new Date(matchDate).getTime();
+            let x = setInterval(function() {
+                let now = new Date().getTime();
+                let distance = countDownDate - now;
+                let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                document.getElementById(id).innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+                if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById(id).innerHTML = "Match Started";
+                }
+            }, 1000);
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>ICC Champions Trophy 2025 Predictions</h1>
+    </header>
+    <main>
+        <div class="about">
+            <h2>About ICC Champions Trophy 2025</h2>
+            <p>The ICC Champions Trophy 2025 is an upcoming international cricket tournament, featuring the top teams in the world. It will be hosted in Pakistan, with matches taking place in various iconic stadiums.</p>
+        </div>
+        <div class="match-card">
+            <h2>Match 1: Pakistan vs New Zealand</h2>
+            <p>Date: February 19, 2025</p>
+            <p>Venue: National Stadium, Karachi</p>
+            <p class="prediction">Fantasy League Team Prediction: Coming Soon</p>
+            <p class="match-winner">Match Winner Prediction: Coming Soon</p>
+            <p class="countdown" id="countdown1"></p>
+        </div>
+        <div class="match-card">
+            <h2>Match 2: Bangladesh vs India</h2>
+            <p>Date: February 20, 2025</p>
+            <p>Venue: Dubai International Cricket Stadium, Dubai</p>
+            <p class="prediction">Fantasy League Team Prediction: Coming Soon</p>
+            <p class="match-winner">Match Winner Prediction: Coming Soon</p>
+            <p class="countdown" id="countdown2"></p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Cricket Predictions Inc. | Designed by Monish Pandey | Follow on Instagram: <a href="https://instagram.com/mp_editz9p" target="_blank" style="color: #ffcc00;">@mp_editz9p</a></p>
+    </footer>
+    <script>
+        countdownTimer("countdown1", "Feb 19, 2025 14:00:00");
+        countdownTimer("countdown2", "Feb 20, 2025 15:00:00");
+    </script>
+</body>
+</html>
